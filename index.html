@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <section class="banner">
+        <figure class="profile-pic" data-testid="profilePicture">
+          <img
+            src="images/profile.png"
+            alt="Profile Picture"
+            title="Profile Picture"
+            width="698"
+            height="684"
+          />
+          <figcaption class="offscreen">
+            Profile Picture of Ivy Namwonja
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="profile-card-body">
+        <h2 class="name center" data-testid="fullName">Ivy Namwonja</h2>
+        <div class="title center" data-testid="jobTitle">Software Engineer</div>
+        <div class="bio" data-testid="shortBio">
+          <h3 class="bio__h2">Crafting Seamless Digital Experiences</h3>
+          <p>
+            As a Frontend Software Engineer with the skill for designing user-friendly interfaces, I am passionate about turning concepts into captivating web applications. With proficiency in the JavaScript/TypeScript, HTML, CSS, and REACT frameworks, I like simplifying difficult problems. My passion for technology and design inspires me to keep learning and developing so that every project not only has a stunning appearance but also offers an amazing user experience.
+          </p>
+        </div>
+        <div class="location" data-testid="currentLocation">
+          <i class="fa-solid fa-location-dot" style="color: #946b53"></i>
+          Nairobi, Kenya
+        </div>
+        <div class="email" data-testid="emailAddress">
+          <i class="fa-regular fa-envelope" style="color: #946b53"></i>
+          <a href="mailto:isnamwonja@gmail.com">isnamwonja@gmail.com</a>
+        </div>
+        <div class="socialLinks" data-testid="socialLinks">
+          <a href="https://www.linkedin.com/in/ivy-namwonja/" target="_blank">
+            <i class="fa-brands fa-linkedin" style="color: #946b53"></i>
+          </a>
+          <a href="https://github.com/istacyn" target="_blank">
+            <i class="fa-brands fa-github" style="color: #946b53"></i>
+          </a>
+          <a href="https://x.com/ivystacyn" target="_blank">
+            <i class="fa-brands fa-x-twitter" style="color: #946b53"></i>
+          </a>
+        </div>
+        <div class="utc-time center" data-testid="currentTimeUTC"></div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
